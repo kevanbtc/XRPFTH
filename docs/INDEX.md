@@ -6,6 +6,7 @@
 - Architecture & Diagrams: `./DIAGRAMS.md`
 - Infrastructure Overview: `./INFRASTRUCTURE_OVERVIEW.md`
 - Investor Memo: `./INVESTOR_MEMO.md`
+- Website PRD (Spark): `./WEBSITE_PRD_FOR_SPARK.md`
 - Terms & Definitions: `../TERMS_AND_DEFINITIONS.md`
 - System Spec: `../SYSTEM_SPEC.md`
 
