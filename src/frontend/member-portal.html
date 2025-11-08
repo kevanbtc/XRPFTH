@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTH Member Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; }
+        .balance-info, .bonus-info, .por-info { background: #e9f5ff; border-left: 5px solid #007bff; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+        .button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FTH Member Portal</h1>
+
+        <div class="balance-info">
+            <h2>Your Balance</h2>
+            <p><strong>FTHUSD:</strong> <span id="fthusd-balance">Loading...</span></p>
+        </div>
+
+        <div class="bonus-info">
+            <h2>Recent Bonuses</h2>
+            <ul id="bonus-list">
+                <li>Loading bonuses...</li>
+            </ul>
+        </div>
+
+        <div class="por-info">
+            <h2>Proof of Reserve (PoR)</h2>
+            <p>Latest PoR Snapshot: <span id="por-snapshot">Loading...</span></p>
+            <button class="button" onclick="viewFullPoR()">View Full PoR Details</button>
+        </div>
+
+        <hr>
+
+        <h2>Actions</h2>
+        <button class="button" onclick="depositFunds()">Deposit FTHUSD</button>
+        <button class="button" onclick="redeemFunds()">Redeem FTHUSD</button>
+        <button class="button" onclick="orderGold()">Order Gold</button>
+    </div>
+
+    <script>
+        // Mock data and functions for demonstration
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('fthusd-balance').textContent = '1,234.56';
+            document.getElementById('bonus-list').innerHTML = `
+                <li>+10 FTHUSD (Daily Bonus - Nov 7)</li>
+                <li>+50 FTHUSD (Referral Bonus)</li>
+            `;
+            document.getElementById('por-snapshot').textContent = 'Nov 7, 2025 - Verified';
+        });
+
+        function viewFullPoR() {
+            alert('Navigating to full PoR details (placeholder)');
+            // In a real app, this would link to a detailed PoR report or page
+        }
+
+        function depositFunds() {
+            alert('Initiating FTHUSD deposit (placeholder)');
+            // In a real app, this would open a deposit form/flow
+        }
+
+        function redeemFunds() {
+            alert('Initiating FTHUSD redemption (placeholder)');
+            // In a real app, this would open a redemption form/flow
+        }
+
+        function orderGold() {
+            alert('Initiating gold order (placeholder)');
+            // In a real app, this would open a gold order form/flow
+        }
+    </script>
+</body>
+</html>

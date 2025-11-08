@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTH Admin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; }
+        .dashboard-section { background: #e9f5ff; border-left: 5px solid #007bff; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        .button { background-color: #007bff; color: white; padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; margin-right: 5px; }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FTH Admin Dashboard</h1>
+
+        <div class="dashboard-section">
+            <h2>Proof of Reserve (PoR) Overview</h2>
+            <p>Latest PoR Snapshot: <span id="admin-por-snapshot">Loading...</span></p>
+            <button class="button" onclick="runPoRSnapshot()">Run New PoR Snapshot</button>
+            <button class="button" onclick="viewPoRHistory()">View PoR History</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Members Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member ID</th>
+                        <th>Status</th>
+                        <th>FTHUSD Balance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="members-table-body">
+                    <tr><td colspan="4">Loading members...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Ledger Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tx ID</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Member ID</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="ledger-tx-table-body">
+                    <tr><td colspan="5">Loading transactions...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Compliance & Operations</h2>
+            <button class="button" onclick="viewComplianceRegistry()">Compliance Registry</button>
+            <button class="button" onclick="manageGoldOrders()">Manage Gold Orders</button>
+            <button class="button" onclick="viewSystemLogs()">View System Logs</button>
+        </div>
+    </div>
+
+    <script>
+        // Mock data and functions for demonstration
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('admin-por-snapshot').textContent = 'Nov 7, 2025 - Verified';
+
+            const members = [
+                { id: 'mem_001', status: 'Approved', balance: '1,234.56' },
+                { id: 'mem_002', status: 'Pending KYC', balance: '0.00' },
+                { id: 'mem_003', status: 'Approved', balance: '5,000.00' },
+            ];
+            const membersTableBody = document.getElementById('members-table-body');
+            membersTableBody.innerHTML = members.map(member => `
+                <tr>
+                    <td>${member.id}</td>
+                    <td>${member.status}</td>
+                    <td>${member.balance} FTHUSD</td>
+                    <td>
+                        <button class="button" onclick="viewMember('${member.id}')">View</button>
+                        <button class="button" onclick="editMember('${member.id}')">Edit</button>
+                    </td>
+                </tr>
+            `).join('');
+
+            const transactions = [
+                { id: 'tx_001', type: 'Deposit', amount: '100.00', memberId: 'mem_001', date: '2025-11-07' },
+                { id: 'tx_002', type: 'Bonus', amount: '10.00', memberId: 'mem_001', date: '2025-11-07' },
+                { id: 'tx_003', type: 'Redemption', amount: '500.00', memberId: 'mem_003', date: '2025-11-06' },
+            ];
+            const ledgerTxTableBody = document.getElementById('ledger-tx-table-body');
+            ledgerTxTableBody.innerHTML = transactions.map(tx => `
+                <tr>
+                    <td>${tx.id}</td>
+                    <td>${tx.type}</td>
+                    <td>${tx.amount} FTHUSD</td>
+                    <td>${tx.memberId}</td>
+                    <td>${tx.date}</td>
+                </tr>
+            `).join('');
+        });
+
+        function runPoRSnapshot() {
+            alert('Initiating new PoR snapshot (placeholder)');
+        }
+
+        function viewPoRHistory() {
+            alert('Navigating to PoR history (placeholder)');
+        }
+
+        function viewMember(memberId) {
+            alert(`Viewing details for member: ${memberId} (placeholder)`);
+        }
+
+        function editMember(memberId) {
+            alert(`Editing member: ${memberId} (placeholder)`);
+        }
+
+        function viewComplianceRegistry() {
+            alert('Navigating to Compliance Registry (placeholder)');
+        }
+
+        function manageGoldOrders() {
+            alert('Navigating to Gold Order Management (placeholder)');
+        }
+
+        function viewSystemLogs() {
+            alert('Navigating to System Logs (placeholder)');
+        }
+    </script>
+</body>
+</html>

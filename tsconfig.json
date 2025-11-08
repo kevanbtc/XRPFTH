@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "scripts/*": ["scripts/*"],
+      "test/*": ["test/*"],
+      "fth-xrpl-stable-desk/*": ["fth-xrpl-stable-desk/src/*"]
+    },
+    "composite": true
+  },
+  "include": [
+    "cli/**/*.ts",
+    "tasks/**/*.ts",
+    "scripts/**/*.ts",
+    "test/**/*.ts",
+    "hardhat.config.ts",
+    "compliant-bill-token/hardhat.config.ts",
+    "compliant-bill-token/scripts/**/*.ts",
+    "compliant-bill-token/test/**/*.ts",
+    "compliant-bill-token/contracts/**/*.ts",
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "evm/artifacts/**/*.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "cache",
+    "artifacts",
+    "dist"
+  ],
+  "references": [
+    { "path": "./compliant-bill-token/tsconfig.json" },
+    { "path": "./fth-xrpl-stable-desk/tsconfig.json" },
+    { "path": "./apps/digital-currency-manager/tsconfig.json" },
+    { "path": "./apps/stablecoin-manager/tsconfig.json" },
+    { "path": "./evm/tsconfig.json" }
+  ]
+}

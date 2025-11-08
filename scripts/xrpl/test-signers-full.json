@@ -1,0 +1,75 @@
+{
+  "fthusdSigners": [
+    {
+      "role": "CEO",
+      "address": "rHjU4tmLaLXeJw95TVEofFv16ERBGsLMwg",
+      "seed": "sEd7uFrKy25N2gx4FJ52HzwDvdWhNQa"
+    },
+    {
+      "role": "CTO",
+      "address": "rL6YZj216QFziJcYkhXMvasBpkiMUtWdMj",
+      "seed": "sEd73g41RQteubogtv5px76vPmgzrkx"
+    },
+    {
+      "role": "Compliance Officer",
+      "address": "rfpQqaSh7o7hGnRk13d1TBU8htE5sfMQDZ",
+      "seed": "sEdVsWcCsZEcuPRF9gDTX8Pup84nSf2"
+    },
+    {
+      "role": "External Auditor",
+      "address": "rJurJvvRKKGM6X93qQY4h3RyytXpGu28Y8",
+      "seed": "sEdTPkXGcVmbxj7f7aMb3xngC4CfK67"
+    },
+    {
+      "role": "Backup Key",
+      "address": "rEFhjdSCymfbdYcdHZVYfWBiwHovZwSRdW",
+      "seed": "sEd71iyf3R61qNT5KemYJ4foDpkaaA4"
+    }
+  ],
+  "usdfSigners": [
+    {
+      "role": "CEO",
+      "address": "rLupVvQ8UjNDY625as4huvMqz8NQ2rXdTW",
+      "seed": "sEdT9i833GCcXggRDNdSQc6bZQ5EqSx"
+    },
+    {
+      "role": "CTO",
+      "address": "rPQoyFhW3Gc8ArSTopMKQGWTUvQmFE9hNU",
+      "seed": "sEd71kYYd1qJJBPf9TS1Jkn6oTZYXgc"
+    },
+    {
+      "role": "Compliance Officer",
+      "address": "r9PwumdL8LkKurUWVNYgxVXECTjNGjTTLB",
+      "seed": "sEd7GR5ASVG2gHYR63m1Xzp2LnFsNFY"
+    },
+    {
+      "role": "External Auditor",
+      "address": "rpipveiMa8qQTNFGDVFHX6oJRW9wgoxcnr",
+      "seed": "sEdTmvQjyQbfRejiZAHC6aGpwrDXAxN"
+    },
+    {
+      "role": "Backup Key",
+      "address": "rJviBHHndtVBBCyP1K6B4fd1E8rJn47Hn1",
+      "seed": "sEdSZ3WhupEhFztaK9MrDX3BdB5wgnX"
+    }
+  ],
+  "goldVaultSigners": [
+    {
+      "role": "Gold Operations Lead",
+      "address": "rL2z7LNdVz2b14DjMxRfPCT2FnnJqtm1Mm",
+      "seed": "sEdVLfXqb8mZ87eckVWGWKddhp11woh"
+    },
+    {
+      "role": "CTO",
+      "address": "rEnmebgTcw1XTWGeAHP3P91PW6R5NvSGgF",
+      "seed": "sEdTn9S4UL6KiJgupXiBmHJwUcasUWw"
+    },
+    {
+      "role": "Compliance Officer",
+      "address": "rh1oNKe68TYsXLtVRpDhnFuUznj2w88KGv",
+      "seed": "sEd7w4RACMm19en1oGbWL5raTDRndtA"
+    }
+  ],
+  "generated": "2025-11-08T12:38:57.920Z",
+  "warning": "DO NOT USE THESE KEYS IN PRODUCTION - TEST ONLY"
+}
