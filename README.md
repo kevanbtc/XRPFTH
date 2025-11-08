@@ -31,8 +31,6 @@ It intentionally contains specifications, designs, and runbooks — not producti
 
 XRPFTH covers:
 
-- FTH Dubai Shariah Gold (FTHS)
-- TGUSD Stablecoin
 - FTHUSD / USDF overlay rails
 - Banking, KYC/AML, custody, compliance
 
