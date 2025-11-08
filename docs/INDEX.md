@@ -5,6 +5,7 @@
 - Independent Appraisal: `../INDEPENDENT_TECHNICAL_EVALUATION.md`
 - Architecture & Diagrams: `./DIAGRAMS.md`
 - Infrastructure Overview: `./INFRASTRUCTURE_OVERVIEW.md`
+- Investor Memo: `./INVESTOR_MEMO.md`
 - Terms & Definitions: `../TERMS_AND_DEFINITIONS.md`
 - System Spec: `../SYSTEM_SPEC.md`
 

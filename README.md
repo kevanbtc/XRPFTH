@@ -15,6 +15,19 @@ It intentionally contains specifications, designs, and runbooks — not producti
 
 ---
 
+## Why we built this (for investors)
+
+Capital needs compliant, instant, global rails. Today’s fiat rails are slow, gated, and opaque. XRPFTH delivers a fully-documented, security-first infrastructure on XRPL with bank/KYC integration and real-time proof-of-reserves. The goal: institution‑grade issuance and settlement with auditability, programmability, and operational guardrails from day one.
+
+- Problem: Fragmented payment rails, delayed settlement, weak transparency, and compliance friction.
+- Solution: A production‑oriented reference stack on XRPL + services + banking rails with strict invariants and end‑to‑end observability.
+- Why now: XRPL offers native payments and trustline semantics; our stack codifies security and compliance patterns investors demand.
+- Outcome: Faster, cheaper, safer rails that can support scaled distribution to accredited investors and institutional partners.
+
+What investors get: a de‑risked, test‑backed path to compliant issuance and redemption, with proof‑points across security, ops, and economics.
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -44,6 +57,8 @@ This documentation defines what must exist and when it’s safe to launch.
 - INDEPENDENT APPRAISAL: `INDEPENDENT_TECHNICAL_EVALUATION.md` — architecture, security, economics, build/replacement costs, ratings, boardroom narrative
 
 See the full docs index at `docs/INDEX.md`.
+
+For an investor‑focused deep dive (value, compliance, risk, GTM, status), see `docs/INVESTOR_MEMO.md`.
 
 ---
 
