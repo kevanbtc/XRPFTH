@@ -31,6 +31,12 @@ What investors get: a de‑risked, test‑backed path to compliant issuance and 
 ## Table of Contents
 
 - [Overview](#overview)
+- [How Members Use FTH](#how-members-use-fth)
+- [Why XRPL & EVM](#why-xrpl--evm)
+- [Trust & Transparency (PoR)](#trust--transparency-por)
+- [Who FTH Is For](#who-fth-is-for)
+- [Under the Hood](#under-the-hood)
+- [Call to Action](#call-to-action)
 - [Key Documents](#key-documents)
 - [Architecture & Diagrams](#architecture--diagrams)
 - [Infrastructure Overview](#infrastructure-overview)
@@ -48,6 +54,81 @@ XRPFTH covers:
 - Banking, KYC/AML, custody, compliance
 
 This documentation defines what must exist and when it’s safe to launch.
+
+---
+
+## How Members Use FTH
+
+1. Join & Verify
+   - Complete KYC and activate a membership profile/NFT.
+
+2. Load FTHUSD
+   - Fund your FTHUSD balance via supported on/off‑ramp options (conceptual bank transfer or equivalent; no partners named here).
+
+3. Earn USDF Rewards
+   - Participation and program activity earn closed‑loop USDF rewards credits (framed as membership rewards, not yield).
+
+4. Buy Discounted Gold
+   - Use FTHUSD to place discounted gold and metals orders. Orders can be fulfilled (delivery) or bought back by the program (conceptually), bridging digital balance to physical asset.
+
+5. Check Proof‑of‑Reserves
+   - View coverage (e.g., ~104–105%) and click through to on‑chain PoR snapshots anchored on XRPL and recorded in an EVM PoR registry.
+
+---
+
+## Why XRPL & EVM
+
+- XRPL advantages: High throughput, low fees, native issued currencies and NFTs—ideal for stable balances and membership tokens.
+- EVM + Chainlink: External price feeds (e.g., metals) and a persistent PoR registry for historical, auditable records.
+
+This combination provides battle‑tested primitives with verifiable transparency.
+
+---
+
+## Trust & Transparency (PoR)
+
+We publish regular Proof‑of‑Reserves snapshots including:
+
+- Total assets backing the program
+- Total liabilities (FTHUSD/USDF)
+- Coverage ratio (e.g., 104–105%)
+
+Snapshots are recorded on an EVM PoR registry and anchored on XRPL via transaction memos so members and partners can verify reserves instead of just relying on promises.
+
+---
+
+## Who FTH Is For
+
+- Members / Individuals
+  - Stable digital balances with rewards and access to discounted metals
+  - Quick settlement and transparent reserve reporting
+
+- Partners (Fintechs, Banks, Metals Desks)
+  - XRPL‑native rails without rebuilding the stack
+  - Pre‑built program logic (PoR + membership) to reduce time‑to‑market
+
+---
+
+## Under the Hood
+
+- XRPL for balances, trustlines, payments, and membership NFTs
+- EVM + Chainlink for price feeds and a PoR registry
+- Off‑chain services for KYC/AML, bonus engine, gold operations, and treasury
+- Multi‑signature governance, RequireAuth/NoRipple issuer flags, and conservative payment rules (no partial payments, no pathfinding)
+- DEX usage controls and integration/security tests baked into CI
+
+See also:
+
+- XRPL docs: `./xrpl/README.md`
+- PoR registry spec: `./evm/specs/FTHPoRRegistry.SPEC.md`
+
+---
+
+## Call to Action
+
+- Join the FTH Program (member interest)
+- Talk to us about integration (partners)
+- Request early access and detailed documentation
 
 ---
 

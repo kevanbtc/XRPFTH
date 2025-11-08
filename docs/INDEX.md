@@ -7,6 +7,8 @@
 - Infrastructure Overview: `./INFRASTRUCTURE_OVERVIEW.md`
 - Investor Memo: `./INVESTOR_MEMO.md`
 - Website PRD (Spark): `./WEBSITE_PRD_FOR_SPARK.md`
+- XRPL Documentation Overview: `../xrpl/README.md`
+- EVM Proof-of-Reserves Spec: `../evm/specs/FTHPoRRegistry.SPEC.md`
 - Terms & Definitions: `../TERMS_AND_DEFINITIONS.md`
 - System Spec: `../SYSTEM_SPEC.md`
 
